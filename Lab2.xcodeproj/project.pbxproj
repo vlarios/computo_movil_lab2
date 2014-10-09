@@ -21,6 +21,10 @@
 		B496C0A619E5C5A0002ED80C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B496C08819E5C5A0002ED80C /* UIKit.framework */; };
 		B496C0AE19E5C5A0002ED80C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B496C0AC19E5C5A0002ED80C /* InfoPlist.strings */; };
 		B496C0B019E5C5A0002ED80C /* Lab2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B496C0AF19E5C5A0002ED80C /* Lab2Tests.m */; };
+		B496C0BB19E5C9ED002ED80C /* Declarations.m in Sources */ = {isa = PBXBuildFile; fileRef = B496C0BA19E5C9ED002ED80C /* Declarations.m */; };
+		B496C0BE19E5D5B1002ED80C /* cellState.m in Sources */ = {isa = PBXBuildFile; fileRef = B496C0BD19E5D5B1002ED80C /* cellState.m */; };
+		B496C0C719E5D9C8002ED80C /* Cities.m in Sources */ = {isa = PBXBuildFile; fileRef = B496C0C619E5D9C8002ED80C /* Cities.m */; };
+		B496C0CA19E5EC29002ED80C /* ViewControllerDummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B496C0C919E5EC29002ED80C /* ViewControllerDummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		B496C0AB19E5C5A0002ED80C /* Lab2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lab2Tests-Info.plist"; sourceTree = "<group>"; };
 		B496C0AD19E5C5A0002ED80C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B496C0AF19E5C5A0002ED80C /* Lab2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lab2Tests.m; sourceTree = "<group>"; };
+		B496C0B919E5C9ED002ED80C /* Declarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Declarations.h; sourceTree = "<group>"; };
+		B496C0BA19E5C9ED002ED80C /* Declarations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Declarations.m; sourceTree = "<group>"; };
+		B496C0BC19E5D5B1002ED80C /* cellState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellState.h; sourceTree = "<group>"; };
+		B496C0BD19E5D5B1002ED80C /* cellState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellState.m; sourceTree = "<group>"; };
+		B496C0C519E5D9C8002ED80C /* Cities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cities.h; sourceTree = "<group>"; };
+		B496C0C619E5D9C8002ED80C /* Cities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cities.m; sourceTree = "<group>"; };
+		B496C0C819E5EC29002ED80C /* ViewControllerDummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerDummy.h; sourceTree = "<group>"; };
+		B496C0C919E5EC29002ED80C /* ViewControllerDummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerDummy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +127,18 @@
 				B496C09319E5C5A0002ED80C /* AppDelegate.h */,
 				B496C09419E5C5A0002ED80C /* AppDelegate.m */,
 				B496C09619E5C5A0002ED80C /* Main.storyboard */,
+				B496C0B919E5C9ED002ED80C /* Declarations.h */,
+				B496C0BA19E5C9ED002ED80C /* Declarations.m */,
 				B496C09919E5C5A0002ED80C /* ViewController.h */,
 				B496C09A19E5C5A0002ED80C /* ViewController.m */,
+				B496C0BC19E5D5B1002ED80C /* cellState.h */,
+				B496C0BD19E5D5B1002ED80C /* cellState.m */,
 				B496C09C19E5C5A0002ED80C /* Images.xcassets */,
+				B496C0C519E5D9C8002ED80C /* Cities.h */,
+				B496C0C619E5D9C8002ED80C /* Cities.m */,
 				B496C08B19E5C5A0002ED80C /* Supporting Files */,
+				B496C0C819E5EC29002ED80C /* ViewControllerDummy.h */,
+				B496C0C919E5EC29002ED80C /* ViewControllerDummy.m */,
 			);
 			path = Lab2;
 			sourceTree = "<group>";
@@ -248,8 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B496C0C719E5D9C8002ED80C /* Cities.m in Sources */,
+				B496C0CA19E5EC29002ED80C /* ViewControllerDummy.m in Sources */,
+				B496C0BE19E5D5B1002ED80C /* cellState.m in Sources */,
 				B496C09B19E5C5A0002ED80C /* ViewController.m in Sources */,
 				B496C09519E5C5A0002ED80C /* AppDelegate.m in Sources */,
+				B496C0BB19E5C9ED002ED80C /* Declarations.m in Sources */,
 				B496C09119E5C5A0002ED80C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,6 +479,7 @@
 				B496C0B519E5C5A0002ED80C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B496C0B619E5C5A0002ED80C /* Build configuration list for PBXNativeTarget "Lab2Tests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +488,7 @@
 				B496C0B819E5C5A0002ED80C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
