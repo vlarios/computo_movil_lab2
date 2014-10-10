@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface Cities : UIViewController
+
     @property (strong, nonatomic) IBOutlet UILabel *lblName;
-    
+    @property (strong, nonatomic) IBOutlet UIImageView *imgCity;
+    @property (strong, nonatomic) IBOutlet UITableView *tblCities;
 
 @end

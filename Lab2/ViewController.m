@@ -23,9 +23,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSLog(@"Here0");
+    //NSLog(@"Here0");
     states     =  [NSMutableArray arrayWithObjects: @"Jalisco", @"Colima", @"Michoacan", @"Nayarit", @"Sonora", @"Sinaloa", @"Chiapas", @"Tabasco", nil];
-    NSLog(@"array assigned");
+    
+    statesImg    =  [NSMutableArray arrayWithObjects: @"guadalajara.jpg", @"guadalajara.jpg", @"guadalajara.jpg", @"guadalajara.jpg", @"guadalajara.jpg", @"guadalajara.jpg", @"guadalajara.jpg", nil];
+    //NSLog(@"array assigned");
     
 }
 
@@ -39,26 +41,26 @@
  **********************************************************************************************/
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    NSLog(@"Here1");
+    //NSLog(@"Here1");
     return 1;
 }
 //-------------------------------------------------------------------------------
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"Here2");
+    //NSLog(@"Here2");
     return 8;
 }
 //-------------------------------------------------------------------------------
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"Here3");
+    //NSLog(@"Here3");
     return 64;
 }
 //-------------------------------------------------------------------------------
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    NSLog(@"Here4");
+    //NSLog(@"Here4");
     
     
     static NSString *CellIdentifier = @"cellState";
@@ -69,7 +71,7 @@
         cell = [[cellState alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    NSLog(@"Here5");
+    //NSLog(@"Here5");
     
     cell.lblName.text       = states[indexPath.row];
     
@@ -80,7 +82,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     strSelectedState     = [NSString stringWithFormat:@"%@", states[indexPath.row]];
-    
+    strSelectedStateImg      = [NSString stringWithFormat:@"%@", statesImg[indexPath.row]];
     
     NSString * storyboardName = @"Main";
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];

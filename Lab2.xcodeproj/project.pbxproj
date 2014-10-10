@@ -25,6 +25,8 @@
 		B496C0BE19E5D5B1002ED80C /* cellState.m in Sources */ = {isa = PBXBuildFile; fileRef = B496C0BD19E5D5B1002ED80C /* cellState.m */; };
 		B496C0C719E5D9C8002ED80C /* Cities.m in Sources */ = {isa = PBXBuildFile; fileRef = B496C0C619E5D9C8002ED80C /* Cities.m */; };
 		B496C0CA19E5EC29002ED80C /* ViewControllerDummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B496C0C919E5EC29002ED80C /* ViewControllerDummy.m */; };
+		B496DECB19E7437F0086393E /* guadalajara.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B496DECA19E7437F0086393E /* guadalajara.jpg */; };
+		B496DECE19E74A120086393E /* cellCity.m in Sources */ = {isa = PBXBuildFile; fileRef = B496DECD19E74A120086393E /* cellCity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,9 @@
 		B496C0C619E5D9C8002ED80C /* Cities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cities.m; sourceTree = "<group>"; };
 		B496C0C819E5EC29002ED80C /* ViewControllerDummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerDummy.h; sourceTree = "<group>"; };
 		B496C0C919E5EC29002ED80C /* ViewControllerDummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerDummy.m; sourceTree = "<group>"; };
+		B496DECA19E7437F0086393E /* guadalajara.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = guadalajara.jpg; path = ../../guadalajara.jpg; sourceTree = "<group>"; };
+		B496DECC19E74A120086393E /* cellCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellCity.h; sourceTree = "<group>"; };
+		B496DECD19E74A120086393E /* cellCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellCity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +129,7 @@
 		B496C08A19E5C5A0002ED80C /* Lab2 */ = {
 			isa = PBXGroup;
 			children = (
+				B496DECA19E7437F0086393E /* guadalajara.jpg */,
 				B496C09319E5C5A0002ED80C /* AppDelegate.h */,
 				B496C09419E5C5A0002ED80C /* AppDelegate.m */,
 				B496C09619E5C5A0002ED80C /* Main.storyboard */,
@@ -133,6 +139,8 @@
 				B496C09A19E5C5A0002ED80C /* ViewController.m */,
 				B496C0BC19E5D5B1002ED80C /* cellState.h */,
 				B496C0BD19E5D5B1002ED80C /* cellState.m */,
+				B496DECC19E74A120086393E /* cellCity.h */,
+				B496DECD19E74A120086393E /* cellCity.m */,
 				B496C09C19E5C5A0002ED80C /* Images.xcassets */,
 				B496C0C519E5D9C8002ED80C /* Cities.h */,
 				B496C0C619E5D9C8002ED80C /* Cities.m */,
@@ -250,6 +258,7 @@
 				B496C09D19E5C5A0002ED80C /* Images.xcassets in Resources */,
 				B496C08F19E5C5A0002ED80C /* InfoPlist.strings in Resources */,
 				B496C09819E5C5A0002ED80C /* Main.storyboard in Resources */,
+				B496DECB19E7437F0086393E /* guadalajara.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +283,7 @@
 				B496C09B19E5C5A0002ED80C /* ViewController.m in Sources */,
 				B496C09519E5C5A0002ED80C /* AppDelegate.m in Sources */,
 				B496C0BB19E5C9ED002ED80C /* Declarations.m in Sources */,
+				B496DECE19E74A120086393E /* cellCity.m in Sources */,
 				B496C09119E5C5A0002ED80C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

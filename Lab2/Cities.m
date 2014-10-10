@@ -8,6 +8,7 @@
 
 #import "Cities.h"
 #import "Declarations.h"
+#import "cellCity.h"
 
 @interface Cities ()
 
@@ -30,6 +31,55 @@
     // Do any additional setup after loading the view.
     
     self.lblName.text           = strSelectedState;
+    self.imgCity.image     = [UIImage imageNamed:strSelectedStateImg];
+    
+    if ([strSelectedState isEqualToString:@"Colima"]) {
+        self.imgCity.image     = [UIImage imageNamed:@"guadalajara.jpg"];
+        citiesName     =  [NSMutableArray arrayWithObjects: @"Colima", @"Manzanillo", @"Tecoman", nil];
+        citiesImg     =  [NSMutableArray arrayWithObjects: @"guadalajara.jpg", @"guadalajara.jpg", @"guadalajara.jpg", nil];
+    }
+    
+    if ([strSelectedState isEqualToString:@"Jalisco"]) {
+        self.imgCity.image     = [UIImage imageNamed:@"guadalajara.jpg"];
+        citiesName     =  [NSMutableArray arrayWithObjects: @"Guadalajara", @"Guzman", @"Tepatitlan", nil];
+        citiesImg     =  [NSMutableArray arrayWithObjects: @"guadalajara.jpg", @"guadalajara.jpg", @"guadalajara.jpg", nil];
+    }
+    
+    if ([strSelectedState isEqualToString:@"Nayarit"]) {
+        self.imgCity.image     = [UIImage imageNamed:@"guadalajara.jpg"];
+        citiesName     =  [NSMutableArray arrayWithObjects: @"Tepic", @"Compostela", @"Acaponeta", nil];
+        citiesImg     =  [NSMutableArray arrayWithObjects: @"guadalajara.jpg", @"guadalajara.jpg", @"guadalajara.jpg", nil];
+    }
+    
+    if ([strSelectedState isEqualToString:@"Michoacan"]) {
+        self.imgCity.image     = [UIImage imageNamed:@"guadalajara.jpg"];
+        citiesName     =  [NSMutableArray arrayWithObjects: @"Morelia", @"Patzcuaro", @"Uruapan", nil];
+        citiesImg     =  [NSMutableArray arrayWithObjects: @"guadalajara.jpg", @"guadalajara.jpg", @"guadalajara.jpg", nil];
+    }
+    
+    if ([strSelectedState isEqualToString:@"Sonora"]) {
+        self.imgCity.image     = [UIImage imageNamed:@"guadalajara.jpg"];
+        citiesName     =  [NSMutableArray arrayWithObjects: @"Hermosillo", @"Obregon", @"Nogales", nil];
+        citiesImg     =  [NSMutableArray arrayWithObjects: @"guadalajara.jpg", @"guadalajara.jpg", @"guadalajara.jpg", nil];
+    }
+    
+    if ([strSelectedState isEqualToString:@"Sinaloa"]) {
+        self.imgCity.image     = [UIImage imageNamed:@"guadalajara.jpg"];
+        citiesName     =  [NSMutableArray arrayWithObjects: @"Los Mochis", @"Culiacan", @"Mazatlan", nil];
+        citiesImg     =  [NSMutableArray arrayWithObjects: @"guadalajara.jpg", @"guadalajara.jpg", @"guadalajara.jpg", nil];
+    }
+    
+    if ([strSelectedState isEqualToString:@"Chiapas"]) {
+        self.imgCity.image     = [UIImage imageNamed:@"guadalajara.jpg"];
+        citiesName     =  [NSMutableArray arrayWithObjects: @"Tuxtla Gutierrez", @"Arriaga", @"Tapachula", nil];
+        citiesImg     =  [NSMutableArray arrayWithObjects: @"guadalajara.jpg", @"guadalajara.jpg", @"guadalajara.jpg", nil];
+    }
+    
+    if ([strSelectedState isEqualToString:@"Tabasco"]) {
+        self.imgCity.image     = [UIImage imageNamed:@"guadalajara.jpg"];
+        citiesName     =  [NSMutableArray arrayWithObjects: @"Macuspana", @"Paraiso", @"Teapa", nil];
+        citiesImg     =  [NSMutableArray arrayWithObjects: @"guadalajara.jpg", @"guadalajara.jpg", @"guadalajara.jpg", nil];
+    }
    
 }
 
@@ -39,7 +89,59 @@
     // Dispose of any resources that can be recreated.
 }
 
+/**********************************************************************************************
+ Table Functions
+ **********************************************************************************************/
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    NSLog(@"Here1");
+    return 1;
+}
+//-------------------------------------------------------------------------------
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    NSLog(@"Here2");
+    return 3;
+}
+//-------------------------------------------------------------------------------
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"Here3");
+    return 64;
+}
+//-------------------------------------------------------------------------------
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    NSLog(@"Here4");
+    
+    
+    static NSString *CellIdentifier = @"cellCity";
+    
+    cellCity *cell = (cellCity *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil)
+    {
+        cell = [[cellCity alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    
+    //NSLog(@"Here5");
+    
+    cell.lblName.text       = citiesName[indexPath.row];
+    cell.imgCity.image    = [UIImage imageNamed:citiesImg[indexPath.row]];
+    
+    return cell;
+}
 
+//-------------------------------------------------------------------------------
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    strSelectedCityName     = [NSString stringWithFormat:@"%@", citiesName[indexPath.row]];
+    strSelectedCityImg      = [NSString stringWithFormat:@"%@", citiesImg[indexPath.row]];
+    self.lblName.text = strSelectedCityName;
+    self.imgCity.image     = [UIImage imageNamed:strSelectedCityImg];
+    
+    
+}
 
 
 /*
