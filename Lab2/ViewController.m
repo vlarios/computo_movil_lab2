@@ -26,7 +26,7 @@
     //NSLog(@"Here0");
     states     =  [NSMutableArray arrayWithObjects: @"Jalisco", @"Colima", @"Michoacan", @"Nayarit", @"Sonora", @"Sinaloa", @"Chiapas", @"Tabasco", nil];
     
-    statesImg    =  [NSMutableArray arrayWithObjects: @"guadalajara.jpg", @"guadalajara.jpg", @"guadalajara.jpg", @"guadalajara.jpg", @"guadalajara.jpg", @"guadalajara.jpg", @"guadalajara.jpg", nil];
+    statesImg    =  [NSMutableArray arrayWithObjects: @"Jalisco.png", @"Colima.png", @"Michoacan.png", @"Nayarit.png", @"Sonora.png", @"Sinaloa.png", @"Chiapas.png", @"Tabasco.png", nil];
     //NSLog(@"array assigned");
     
 }
